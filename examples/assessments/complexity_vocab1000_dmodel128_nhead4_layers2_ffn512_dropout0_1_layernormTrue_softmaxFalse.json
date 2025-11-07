@@ -1,0 +1,22 @@
+{
+  "model": "SmallLLM",
+  "model_config": {
+    "vocab_size": 1000,
+    "d_model": 128,
+    "nhead": 4,
+    "num_layers": 2,
+    "dim_feedforward": 512,
+    "dropout": 0.1,
+    "use_final_layer_norm": true,
+    "use_softmax": false
+  },
+  "input_shape": {
+    "batch_size": 1,
+    "seq_len": 10
+  },
+  "complexity_analysis": {
+    "big_o_complexity": "O(L * n\u00b2 * d)",
+    "flops_per_token": 75776.0,
+    "total_flops": 757760.0
+  }
+}

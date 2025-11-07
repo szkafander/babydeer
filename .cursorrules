@@ -6,6 +6,7 @@ Babydeer is a package to define, train and evaluate energy efficient LLMs.
 ## Code Style
 - Code must be as self-documenting as possible.
 - Simplicity and legibility preferred.
+- Do not use cute smileys and icons in print statements or docstrings. Keep it clean and professional.
 
 ### Python Version
 - Target Python 3.10+
