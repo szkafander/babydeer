@@ -114,6 +114,3 @@ class SmallLLM(nn.Module):
             return torch.softmax(logits, dim=-1)
         
         return logits
-
-
-model = SmallLLM()
