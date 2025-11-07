@@ -1,0 +1,42 @@
+# Babydeer Code Style and Guidelines
+
+## Project Overview
+Babydeer is a package to define, train and evaluate energy efficient LLMs.
+
+## Code Style
+- Code must be as self-documenting as possible.
+- Simplicity and legibility preferred.
+
+### Python Version
+- Target Python 3.10+
+- Use type hints for all function parameters and return types
+
+### Formatting
+- Line length: 100 characters (configured in pyproject.toml)
+- Use `black` for code formatting
+- Use `ruff` for linting
+- Follow PEP 8 conventions
+
+### Type Hints
+- Always include type hints for function parameters
+- Always include return type annotations (`-> Type`)
+- Use `|` for union types (e.g., `float | None`)
+- Import types from `typing` when needed
+
+### Naming Conventions
+- Classes: `PascalCase` (e.g., `SmallLLM`)
+- Functions: `snake_case` (e.g., `render_graph`)
+- Variables: `snake_case` (e.g., `vocab_size`)
+- Constants: `UPPER_SNAKE_CASE` (if needed)
+- Private methods/attributes: prefix with `_` if truly private
+
+### Code Organization
+- Use absolute imports from the `babydeer` package
+- Keep functions focused and single-purpose
+- Add inline comments for complex logic or non-obvious operations
+
+### PyTorch Conventions
+- Use `torch.nn.Module` for all model classes
+- Store configuration parameters as instance attributes
+- Use descriptive names for layers (e.g., `self.embedding`, `self.transformer`)
+- Always document tensor shapes in docstrings and comments: `(batch_size, seq_len, vocab_size)`
